@@ -1,63 +1,102 @@
-.main{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-
-.middle{
-    margin: 14px 10px;
-
-
-}
-
-.right{
+/* Main Container */
+.main {
   display: flex;
+  flex-wrap: wrap; /* Allows elements to wrap on smaller screens */
+  justify-content: center;
   align-items: center;
-  justify-content: space-evenly;
-  flex-direction: column;
+  gap: 20px; /* Adds space between sections */
+  padding: 20px;
 }
 
-.left{
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  flex-direction: column;
+/* Left, Middle & Right Sections */
+.left, .middle, .right {
+  flex: 1;
+  min-width: 320px; /* Ensures elements don’t get too small */
+  max-width: 500px; /* Prevents elements from stretching too much */
 }
 
+/* Adjust margin for middle section */
+.middle {
+  margin: 14px 10px;
+}
 
+/* Responsive Image */
+.middle img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
 
-
-
-
-/* Dark background for accordion */
+/* Dark Theme Accordion */
 .accordion-dark .accordion-item {
-    background-color: #212529; /* Dark Gray */
-    color: #ffffff; /* White text */
-    border: 1px solid #343a40; /* Darker border */
+  background-color: #212529; /* Dark Gray */
+  color: #ffffff; /* White text */
+  border: 1px solid #343a40; /* Darker border */
+}
+
+.accordion-dark .accordion-button {
+  background-color: #343a40;
+  color: #ffffff;
+  border: none;
+}
+
+.accordion-dark .accordion-button:not(.collapsed) {
+  background-color: #007bff; /* Blue highlight */
+  color: #ffffff;
+}
+
+.accordion-dark .accordion-button:focus {
+  box-shadow: none;
+}
+
+.accordion-dark .accordion-body {
+  background-color: #1c1f23;
+  color: #ffffff;
+}
+
+/* Make buttons full width on small screens */
+button {
+  width: 100%;
+}
+
+/* Media Queries for Better Responsiveness */
+@media screen and (max-width: 768px) {
+  .main {
+      flex-direction: column; /* Stack items vertically */
+      align-items: center;
   }
-  
-  /* Style the collapsed button */
-  .accordion-dark .accordion-button {
-    background-color: #343a40; /* Darker background */
-    color: #ffffff;
-    border: none;
+
+  .left, .middle, .right {
+      max-width: 90%;
   }
-  
-  /* Highlight active accordion button with blue */
-  .accordion-dark .accordion-button:not(.collapsed) {
-    background-color: #007bff; /* Blue highlight */
-    color: #ffffff;
+
+  .card {
+      width: 100% !important; /* Make cards full-width on smaller screens */
   }
-  
-  /* Remove default box shadow */
-  .accordion-dark .accordion-button:focus {
-    box-shadow: none;
+
+  button {
+      font-size: 14px; /* Reduce button text size */
   }
-  
-  /* Style accordion body */
-  .accordion-dark .accordion-body {
-    background-color: #1c1f23; /* Slightly lighter dark */
-    color: #ffffff;
+}
+
+@media screen and (max-width: 480px) {
+  .main {
+      padding: 10px;
   }
-  
+
+  .left, .middle, .right {
+      max-width: 100%;
+  }
+
+  .accordion-button {
+      font-size: 14px; /* Reduce font size for smaller screens */
+  }
+
+  .card-title {
+      font-size: 20px; /* Adjust heading size */
+  }
+
+  .card-text {
+      font-size: 14px; /* Adjust paragraph text size */
+  }
+}

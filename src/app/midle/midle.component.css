@@ -1,0 +1,64 @@
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.middle{
+    width: 30%;
+    margin: 14px 10px;
+
+
+}
+
+.right{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+
+.left{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+
+
+
+
+
+
+/* Dark background for accordion */
+.accordion-dark .accordion-item {
+    background-color: #212529; /* Dark Gray */
+    color: #ffffff; /* White text */
+    border: 1px solid #343a40; /* Darker border */
+  }
+  
+  /* Style the collapsed button */
+  .accordion-dark .accordion-button {
+    background-color: #343a40; /* Darker background */
+    color: #ffffff;
+    border: none;
+  }
+  
+  /* Highlight active accordion button with blue */
+  .accordion-dark .accordion-button:not(.collapsed) {
+    background-color: #007bff; /* Blue highlight */
+    color: #ffffff;
+  }
+  
+  /* Remove default box shadow */
+  .accordion-dark .accordion-button:focus {
+    box-shadow: none;
+  }
+  
+  /* Style accordion body */
+  .accordion-dark .accordion-body {
+    background-color: #1c1f23; /* Slightly lighter dark */
+    color: #ffffff;
+  }
+  

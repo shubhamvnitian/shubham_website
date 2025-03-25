@@ -1,0 +1,78 @@
+/* Dark Background */
+body {
+    background-color: #222121; /* Dark Theme */
+    color: white;
+}
+
+/* Carousel Container */
+.carousel-inner {
+    background-color: rgb(72, 70, 70);
+    border: 2px solid rgb(0, 150, 255); /* Thin Blue Border */
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 150, 255, 0.7); /* Soft Blue Glow */
+    overflow: hidden;
+    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+/* Hover Effect: Stronger Glow */
+.carousel-inner:hover {
+    box-shadow: 0 0 25px rgba(0, 150, 255, 1);
+    transform: scale(1.02);
+}
+
+/* Image Styling */
+.carousel-item img {
+    height: 400px;
+    object-fit: cover;
+    filter: brightness(80%);
+}
+
+/* Navigation Buttons */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 150, 255, 0.8); /* Dark Blue */
+    border-radius: 50%;
+    padding: 10px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+/* Hover Effect for Buttons */
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover {
+    background-color: rgba(0, 150, 255, 1);
+}
+
+
+/* About Container */
+.about-container {
+    background-color: black;
+    color: white;
+    border: 2px solid #00bfff; /* Thin Blue Border */
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 191, 255, 0.7); /* Subtle Blue Glow */
+    max-width: 1300px;
+    margin: auto;
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Hover Effect: Enlarge and Glow */
+.about-container:hover {
+    transform: scale(1.05); /* Slightly enlarge */
+    box-shadow: 0 0 20px rgba(0, 191, 255, 1); /* Stronger Blue Glow */
+}
+
+/* Typography */
+h2 {
+    font-size: 2.2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #00bfff; /* Blue Heading */
+}
+
+p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    text-align: justify;
+    padding: 10px;
+}

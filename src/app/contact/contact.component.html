@@ -1,0 +1,57 @@
+<div class="container contact-container mt-5 p-4">
+    <h2 class="text-info fw-bold text-center mb-4">
+        <i class="bi bi-envelope-fill"></i> Contact Me
+    </h2>
+
+    <!-- Contact Form -->
+    <form class="row g-3">
+        <div class="col-md-6">
+            <label for="name" class="form-label text-light">
+                <i class="bi bi-person-fill"></i> Full Name
+            </label>
+            <input type="text" id="name" class="form-control" placeholder="Enter your full name" (input)="get_name($event)">
+        </div>
+
+        <div class="col-md-6">
+            <label for="email" class="form-label text-light">
+                <i class="bi bi-envelope-fill"></i> Email
+            </label>
+            <input type="email" id="email" class="form-control" placeholder="Enter your email" (input)="get_mail_id($event)">
+        </div>
+
+        <div class="col-12">
+            <label for="message" class="form-label text-light">
+                <i class="bi bi-chat-dots-fill"></i> Message
+            </label>
+            <textarea id="message" class="form-control" rows="4" placeholder="Write your message..." (input)="get_message($event)"></textarea>
+        </div>
+
+        <div class="col-12 text-center">
+            <button type="submit" class="btn btn-info w-50 fw-bold" (click)="send_message()">
+                <i class="bi bi-send-fill" ></i> Send Message
+            </button>
+        </div>
+    </form>
+
+    <!-- Contact Details -->
+    <div class="contact-details mt-4 text-center">
+        <p class="text-light">
+            <i class="bi bi-telephone-fill text-info"></i>
+            <strong> Phone:</strong> 8655471543
+        </p>
+        <p class="text-light">
+            <i class="bi bi-instagram text-danger"></i>
+            <strong> Instagram:</strong> 
+            <a href="https://www.instagram.com/3.__shubham__.200" class="text-info" target="_blank">
+                3.__shubham__.200
+            </a>
+        </p>
+        <p class="text-light">
+            <i class="bi bi-linkedin text-primary"></i>
+            <strong> LinkedIn:</strong>
+            <a href="https://www.linkedin.com/in/shubham-vishwakarma-367102355" class="text-info" target="_blank">
+                Shubham Vishwakarma
+            </a>
+        </p>
+    </div>
+</div>

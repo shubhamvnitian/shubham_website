@@ -1,0 +1,18 @@
+.project-card {
+    background-color: #007bff; /* Blue background */
+    color: white;
+    padding: 20px;
+    width: 80%; /* Set width for consistency */
+    max-width: 500px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  }
+  
+  .project-card:hover {
+    transform: scale(1.05); /* Zoom effect */
+    box-shadow: 0 0 20px rgba(0, 123, 255, 0.7); /* Glowing blue shadow */
+    background-color: #0056b3; /* Darker blue on hover */
+  }
+  

@@ -1,0 +1,50 @@
+
+/* Form Container with Blue Glow */
+.form-container {
+    background-color: #121212;
+    color: white;
+    border: 2px solid #007bff; /* Blue Border */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.7); /* Blue Glow */
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+/* Hover Effect for Form */
+.form-container:hover {
+    box-shadow: 0 0 20px rgba(0, 123, 255, 1);
+    transform: scale(1.02);
+}
+
+/* Input Fields with Soft Glow */
+.form-control, .form-select {
+    background-color: #1f1f1f;
+    border: 1px solid #007bff;
+    color: white;
+}
+
+.form-control:focus, .form-select:focus {
+    background-color: #1f1f1f;
+    border-color: #00aaff;
+    box-shadow: 0 0 10px rgba(0, 170, 255, 0.7);
+}
+
+/* Glowing Button */
+.btn-glow {
+    background-color: #007bff;
+    border: none;
+    transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.btn-glow:hover {
+    background-color: #00aaff;
+    box-shadow: 0 0 15px rgba(0, 170, 255, 1);
+}
+
+/* Icons */
+.bi {
+    font-size: 1.2rem;
+    margin-right: 5px;
+}

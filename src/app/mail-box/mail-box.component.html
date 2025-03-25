@@ -1,0 +1,23 @@
+<form class="p-4 bg-dark text-white rounded shadow-lg border border-3 border-success" 
+      style="width: 100%;; margin: auto;">
+  <h2 class="text-center mb-4">SEND ME MESSAGE</h2>
+
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label text-white">Email Address</label>
+    <input type="email" class="form-control border-success bg-dark text-white" id="exampleInputEmail1" 
+           aria-describedby="emailHelp" required (input)="get_mail_email_id($event)">
+    <div id="emailHelp" class="form-text text-light">We'll never share your email with anyone else.</div>
+  </div>
+
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label text-white" >message</label>
+    <input type="text" (input)="get_mail_message($event)" class="form-control border-success bg-dark text-white" id="exampleInputmessage" required style="height: 100px;" >
+  </div>
+
+  <div class="mb-3 form-check">
+    <input type="checkbox" class="form-check-input border-success" id="exampleCheck1">
+    <label class="form-check-label text-white" for="exampleCheck1">Remember me</label>
+  </div>
+
+  <button type="submit" class="btn btn-success w-100" (click)="send_message()">SEND</button>
+</form>
